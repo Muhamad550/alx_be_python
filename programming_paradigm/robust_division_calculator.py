@@ -9,8 +9,8 @@ def safe_divide(numerator, denominator):
 
         except ValueError   :
             return "Error: Please enter numeric values only."
-if _name_ == "_main_":
+if __name__ == "__main__":
     # Example usage
     print(safe_divide(10, 5))  
     print(safe_divide(10, 0))  
-    print(safe_divide("ten", 5))
+    print(safe_divide("ten", 5)) 
