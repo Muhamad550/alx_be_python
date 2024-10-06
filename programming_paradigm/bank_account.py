@@ -1,5 +1,5 @@
 class BankAccount:
-    def _init_(self, account_balance = 0):
+    def __init__(self, account_balance = 0):
         self.account_balance = account_balance
 
     def deposit(self, amount):
@@ -16,9 +16,9 @@ class BankAccount:
     def display_balance(self):
         print(f"Current Balance: ${self.account_balance:.2f}")
 
-if  __name__ == "_main_":
+if __name__ == "__main__":
      # Example usage
     account = BankAccount(100)
     account.deposit(50)
     account.withdraw(30)
-    account.display_balance()
+    account.display_balance()   
